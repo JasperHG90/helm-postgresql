@@ -11,7 +11,6 @@ allowedTopologies:
       - key: failure-domain.beta.kubernetes.io/zone
         values:
           - europe-west4-a
-          - europe-west4-b
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -23,4 +22,4 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 300Gi
+      storage: 100Gi
